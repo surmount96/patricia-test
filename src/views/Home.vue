@@ -45,7 +45,8 @@
             <div class="absolute flex flex-col justify-between top-0 w-full px-12-custom h-full">
               <div class="flex justify-between">
                 <img src="@/assets/patricia-logo.svg" alt="patricia-logo">
-                <img src="@/assets/Mask.svg" alt="patricia-logo" class="cursor-pointer" @click="show = !show">
+                <img src="@/assets/Mask.svg" v-show="show" alt="patricia-logo" class="cursor-pointer" @click="show = false">
+                <img src="@/assets/Mask-open.svg" v-show="!show" alt="patricia-logo" class="cursor-pointer" @click="show = true">
               </div>
               <div class="flex justify-between items-center w-full text-gray">
                 <p class="h5">
